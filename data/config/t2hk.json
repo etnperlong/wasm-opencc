@@ -4,13 +4,19 @@
     "type": "mmseg",
     "dict": {
       "type": "ocd",
-      "file": "HKVariants.ocd"
+      "file": "HKVariantsPhrases.ocd"
     }
   },
   "conversion_chain": [{
     "dict": {
-      "type": "ocd",
-      "file": "HKVariants.ocd"
+      "type": "group",
+      "dicts": [{
+        "type": "ocd",
+        "file": "HKVariantsPhrases.ocd"
+      }, {
+        "type": "ocd",
+        "file": "HKVariants.ocd"
+      }]
     }
   }]
 }
