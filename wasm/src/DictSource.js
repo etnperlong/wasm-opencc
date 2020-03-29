@@ -44,7 +44,8 @@ function getSource(proxy, files, sourceName_) {
   } else if (IS_NODE) {
     p = getByFs(sourceName_)
   } else {
-    p = getByFetch(`dict/${sourceName_}`)
+    // p = getByFetch(`dict/${sourceName_}`)
+    p = getByFetch(`//cdn.jsdelivr.net/gh/etnperlong/wasm-opencc@master/wasm/dist/dict/${sourceName_}`)
   }
 
   files[sourceName_] = p

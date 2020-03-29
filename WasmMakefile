@@ -23,7 +23,7 @@ PREFIX = /usr
 build:
 	mkdir -p build/rel
 	(cd build/rel; cmake \
-	-DCMAKE_TOOLCHAIN_FILE=/Users/oyyd/code/github/em2/emscripten/1.38.12/cmake/Modules/Platform/Emscripten.cmake \
+	-DCMAKE_TOOLCHAIN_FILE=/lib/emscripten/cmake/Modules/Platform/Emscripten.cmake \
 	-DBUILD_DOCUMENTATION:BOOL=OFF \
 	-DENABLE_GTEST:BOOL=OFF \
 	-DCMAKE_BUILD_TYPE=Release \
